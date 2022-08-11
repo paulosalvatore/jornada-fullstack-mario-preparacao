@@ -1,0 +1,7 @@
+POST http://localhost:3000/scores
+Content-Type: application/json
+
+{
+  "score": 80,
+  "name": "Nova Pessoa"
+}

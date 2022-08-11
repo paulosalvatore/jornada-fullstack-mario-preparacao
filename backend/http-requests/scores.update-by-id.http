@@ -1,0 +1,7 @@
+PUT http://localhost:3000/scores/1
+Content-Type: application/json
+
+{
+  "score": 80,
+  "name": "Pessoa editada"
+}

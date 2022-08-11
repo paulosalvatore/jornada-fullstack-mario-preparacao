@@ -1,0 +1,83 @@
+.app {
+  background: #9BE5E4;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.app__clouds {
+  display: block;
+  top: 30px;
+  left: calc(50% - 100px);
+  position: absolute;
+  width: 200px;
+  animation: app__clouds-animation infinite 5s linear;
+}
+
+.app__mario {
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  height: 100px;
+}
+
+.app__mario.app__mario--jump {
+  animation: app__mario-jump-animation 0.7s ease-in-out;
+}
+
+.app__pipe {
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  width: 50px;
+  animation: app__pipe-animation infinite 2s linear;
+}
+
+.app__floor {
+  background: limegreen;
+  bottom: 0;
+  height: 30px;
+  position: absolute;
+  width: 100%;
+}
+
+.stop-animation {
+  animation-play-state: paused !important;
+}
+
+@keyframes app__pipe-animation {
+  from {
+    left: calc(100% + 100px)
+  }
+
+  to {
+    left: -300px
+  }
+}
+
+@keyframes app__clouds-animation {
+  from {
+    left: calc(100% + 100px)
+  }
+
+  to {
+    left: -300px
+  }
+}
+
+@keyframes app__mario-jump-animation {
+  from {
+    bottom: 30px;
+  }
+
+  50% {
+    bottom: 180px;
+  }
+
+  to {
+    bottom: 30px;
+  }
+}
