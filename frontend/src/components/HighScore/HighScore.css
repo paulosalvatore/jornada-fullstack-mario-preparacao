@@ -1,0 +1,11 @@
+.high-score {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  background: #ddd;
+  left: 15%;
+  top: 15%;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}

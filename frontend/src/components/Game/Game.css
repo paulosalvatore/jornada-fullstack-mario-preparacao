@@ -1,4 +1,4 @@
-.app {
+.game {
   background: #9BE5E4;
   height: 100vh;
   overflow: hidden;
@@ -6,16 +6,16 @@
   width: 100%;
 }
 
-.app__clouds {
+.clouds {
   display: block;
   top: 30px;
   left: calc(50% - 100px);
   position: absolute;
   width: 200px;
-  animation: app__clouds-animation infinite 5s linear;
+  animation: clouds-animation infinite 5s linear;
 }
 
-.app__mario {
+.mario {
   display: block;
   position: absolute;
   bottom: 30px;
@@ -23,20 +23,20 @@
   height: 100px;
 }
 
-.app__mario.app__mario--jump {
-  animation: app__mario-jump-animation 0.7s ease-in-out;
+.mario.mario--jump {
+  animation: mario-jump-animation 0.7s ease-in-out;
 }
 
-.app__pipe {
+.pipe {
   display: block;
   position: absolute;
   bottom: 30px;
   right: 50px;
   width: 50px;
-  animation: app__pipe-animation infinite 2s linear;
+  animation: pipe-animation infinite 2s linear;
 }
 
-.app__floor {
+.floor {
   background: limegreen;
   bottom: 0;
   height: 30px;
@@ -48,7 +48,7 @@
   animation-play-state: paused !important;
 }
 
-@keyframes app__pipe-animation {
+@keyframes pipe-animation {
   from {
     left: calc(100% + 100px)
   }
@@ -58,7 +58,7 @@
   }
 }
 
-@keyframes app__clouds-animation {
+@keyframes clouds-animation {
   from {
     left: calc(100% + 100px)
   }
@@ -68,7 +68,7 @@
   }
 }
 
-@keyframes app__mario-jump-animation {
+@keyframes mario-jump-animation {
   from {
     bottom: 30px;
   }
