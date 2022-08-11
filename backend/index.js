@@ -37,7 +37,6 @@ app.get('/scores', function (req, res) {
   }
 
   if (name) {
-    console.log({ name });
     orderedScores = orderedScores.filter(score => score.name.includes(name));
   }
 
