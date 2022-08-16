@@ -1,1 +1,1 @@
-GET http://localhost:3000/scores?limit=10
+GET http://localhost:3000/scores?limit=2
